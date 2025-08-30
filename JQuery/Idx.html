@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Tutorial.</title>
+</head>
+
+<body>
+    <p> this is My body0.</p>
+    <p> this is My body1.</p>
+    <p> this is My body2.</p>
+    <p> this is My body3.</p>
+    <p> this is My body4.</p>
+    <p> this is My body5.</p>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        console.log("We are Using JQuery.");
+        // $('selector').action() Syntax of JQuery.
+        $('p').click();
+        $('p').click(function () {
+            console.log("You Clicked on P.");
+
+            // $('p').hide();  //Hide all paragraph.
+            $(this).hide(); // Hide on cliked paragraph.
+            //$('#id').hide(); //Apply on uique Id.
+            // $('.class').hide(); //Apply on unique class.
+        });
+
+
+    });
+
+
+</script>
+
+</html>

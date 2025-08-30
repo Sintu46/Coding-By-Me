@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body {
+            height: 420px;
+            border: 2px solid rgb(12, 12, 193);
+            background-color: bisque;
+            padding: 10px 10px;
+            margin: 20px;
+            width:600px;
+            font-size: 14px;
+            color: red;
+        }
+        #myform {
+            color: rgb(212, 100, 20);
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #myform input {
+            margin: 5px 5px;
+            height: 18px;
+            width: 300px;
+            border: 1px solid rgb(149, 217, 86);
+        }
+        .but {
+            margin: 20px 10px;
+            border-radius: 30px;
+        }
+        .formerror {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div id="myform">
+    <form name="form" action="post" onsubmit="return validat()">
+        <div id="username">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" placeholder="Enter your first name" required>
+            <b><span class="formerror"></span></b>
+        </div>
+        <div id="name">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" placeholder="Enter your last name">
+            <b><span class="formerror"></span></b>
+        </div>
+        <div id="phone">
+            <label for="fphone">Contact No</label>
+            <input type="tel" name="fphone" placeholder="Enter your contact no">
+            <b><span class="formerror"></span></b>
+        </div>
+        <div id="email">
+            <label for="fmail">E-mail</label>
+            <input type="email" name="fmail" placeholder="abc@gmail.com">
+            <b><span class="formerror"></span></b>
+        </div>
+        <div id="pass">
+            <label for="fpass">Password</label>
+            <input type="password" name="fpass" placeholder="Enter your password">
+            <b><span class="formerror"></span></b>
+        </div>
+        <div id="cpass">
+            <label for="fcpass">Confirm Password</label>
+            <input type="password" name="fcpass" placeholder="Enter your Confirm password">
+            <b><span class="formerror"></span></b>
+        </div>
+        <input class="but" type="submit" value="Submit">
+    </form>
+</div>
+<script src="form_validation.js"></script>
+</body>
+</html>

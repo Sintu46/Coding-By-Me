@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Miscellaneous </title>
+    <style>
+        #test {
+            height: 60px;
+            width: 500px;
+            margin: 50px;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid bisque;
+            background: lightblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test">
+        <h1 style="color :red; font-size: 20px;">Each() Method In Jquery</h1>
+    </div>
+    <ul id="thor">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li class="rok">Orange</li>
+        <li>Mango</li>
+        <li>Papaya</li>
+    </ul>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        console.log("Function  is ready.");
+        //Ancestor Traversal.
+        //$('.rok').parent().css('background','gold');
+        //$('#test').parents().css('background','gold');
+      //  $('#thor').parentsUntil('rok').css('color','red');
+      //Each Method.-ytgy
+     $('li').each(function(){
+        console.log($(this).text());
+     });
+    });
+</script>
+
+</html>

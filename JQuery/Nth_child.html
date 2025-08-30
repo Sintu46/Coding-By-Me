@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth child </title>
+</head>
+<body>
+    <h1>This is A Heading in Body.</h1>
+    <p>This is a First paragraph.</p>
+    <div style="border: 2px solid;">
+        <p>This is a  First Paragraph in the Div.</p>
+        <p>This is a  Second paragraph in the Div.</p>
+        <p>This is a  Third paragraph in the Div. </p>
+        <p>This is a  Fourth paragraph in the Div.</p>
+    </div><br>
+    <div style="border:2px solid;">
+        <p>This is a First paragraph of Second Div.</p>
+        <p>This is a Second paragraph of Second Div.</p>
+        <p>This is a Third paragraph of Second Div.</p>
+        <p>This is a Fourth paragraph of Second Div.</p>
+        <p>This is a Fifth paragraph of Second Div.</p>
+    </div><br>
+    <p>This is a Last paragraph.</p>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready( function(){
+         
+            $('div p:nth-child(3)').css("background","gold");
+
+        })
+    </script>
+
+    
+</body>
+</html>

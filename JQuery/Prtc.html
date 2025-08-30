@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Effect</title>
+    <style>
+        #EFT{
+            height:300px;
+            width:200px;
+            border :4px solid rgb(216, 123, 10);
+            margin: 50px;
+            padding: 20px;
+            text-align: center;
+            color: rgb(14, 55, 237);
+        }
+        button{
+            margin:4px;
+            border: 2px solid rgb(216, 147, 43);
+        } 
+    </style>
+</head>
+<body>
+   
+    <button id="hid">Hide</button>
+    <button id="sh">Show</button>
+    <button id="fdot">FadeOut</button>
+    <button id="fdIn">FadeIn</button>
+    <button id="sldup">SlideUp</button>
+    <button id="slddwn">SlideDown</button>
+    <button id="cstm">CustomAnimate</button>
+    <div id="EFT"> This is A Div  with Id EFT. </div>
+    
+</body>
+<script src="https://Code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        console.log("JQuery ON EFFECTS WORKING.");
+        //Hide
+        $('#hid').click(function(){
+            $('#EFT').hide();
+            $(this).css("background-color","brown");  
+        });
+        //Show
+        $('#sh').click(function(){
+            $('#EFT').show();
+            $(this).css("background-color","red");
+        });
+        //FadeOut
+        $('#fdot').click(function(){
+            $('#EFT').fadeOut();
+            $('#fdot').css('color','red');
+        });
+        //FAdeIn
+        $('#fdIn').click(function(){
+            $('#EFT').fadeIn();
+            $('#fdIn').css("color","green");
+        });
+        //Slide Up
+        $('#sldup').click(function(){
+            $('#EFT').slideUp();
+            $(this).css("background-color","green");
+        });
+        //SlideDown
+        $('#slddwn').click(function(){
+            $('#EFT').slideDown();
+            $(this).css("color","blue");
+        });
+        $('#cstm').click(function(){
+            $('#EFT').animate({
+              opacity : 0.5  
+            });
+            $(this).css("color","black");
+        });
+
+    });
+</script>
+</html>

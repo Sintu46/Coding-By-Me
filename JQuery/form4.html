@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #2b5876, #4e4376);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      width: 350px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    .container h2 {
+      margin-bottom: 10px;
+    }
+    .container p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .input-group {
+      margin-bottom: 15px;
+      position: relative;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 12px 40px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .input-group i {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #007bff;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .social-login {
+      margin: 20px 0;
+    }
+    .social-login p {
+      font-size: 14px;
+      color: #666;
+      margin: 10px 0;
+    }
+    .social-icons a {
+      display: inline-block;
+      margin: 0 8px;
+      font-size: 20px;
+      color: #555;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: #007bff;
+    }
+    .footer-text {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #555;
+    }
+    .footer-text a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h4 style="color:#666;">Created by Mahabub</h4>
+    <h2>Sign Up</h2>
+    <p>Create a new account to get started</p>
+    
+    <form>
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Full Name" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Confirm Password" required>
+      </div>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+
+    <div class="social-login">
+      <p>Or sign up with</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <p class="footer-text">
+      By signing up, you agree to our 
+      <a href="#">Terms of Service</a> and 
+      <a href="#">Privacy Policy</a>
+    </p>
+
+    <p class="footer-text">
+      Already have an account? <a href="#">Login</a>
+    </p>
+  </div>
+</body>
+</html>

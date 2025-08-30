@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body {
+            height: 420px;
+            border: 2px solid rgb(12, 12, 193);
+            background-color: bisque;
+            padding: 10px 10px;
+            margin: 20px;
+            width:600px;
+            font-size: 14px;
+            color: red;
+
+
+        }
+
+        #myform {
+            color: rgb(212, 100, 20);
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #myform input {
+            margin: 5px 5px;
+            height: 18px;
+            width: 300px;
+            border: 1px solid rgb(149, 217, 86);
+        }
+
+       
+        .but {
+            margin: 20px 10px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="myform">
+     <form name="form" action="post" onsubmit="return validat()">
+         <div id="username">
+            <label for="username">FirstName</label>
+            <input type="text"  name="fname" placeholder="Enter your first name" required>
+            <b><span class="formerror"></span></b>
+          </div>
+
+        <div id="name">
+            <label for="name">LaststName</label>
+            <input type="text" name="lname" placeholder="Enter your last name">
+            <b><span class="formerror"></span></b><br>
+         </div>
+
+        <div id="phone">
+            <label id="phone">ContactNo</label>
+            <input type="tel"  name="fphone" placeholder="Enter your contact no">
+            <b><span class="formerror"></span></b><br>
+        </div>
+
+            <!-- <div class ="gen">
+                <label>Select Your Gender</label><br>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="fmale">Female</label>
+                <input type="radio" id="female" name="gender" value="female"><br>
+            </div> -->
+
+
+            <!-- <div class ="myform">
+              <label>Enter Your City</label><br>
+                <select name="city">
+                  <option value="Karnal">Karnal</option>
+                  <option value="Kaithal">Kaithal</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Aagra">Aagra</option>
+                </select><br>
+            </div> -->
+
+
+            <div id ="email">
+                <label for="email">E-mail</label>
+                <input type="email"  name="fmail" placeholder="abc@gmail.com">
+                <b><span class="formerror"></span></b><br>
+             </div>
+
+            <div id="pass">
+                <label for="pasword">Password</label>
+                <input type="password" name="fpass" placeholder="Enter your password">
+                <b><span class="formerror"></span></b><br>
+             </div>
+
+             <div id =cpass>
+                <label for="pasword"> ConifrmPassword</label>
+                <input type="password"  name="fcpass" placeholder="Enter your Conifrm password">
+            </div>
+</div>
+    <input class="but" type="submit" value="Submit">
+
+    </form>
+</body>
+<script src="form_validation.js"></script>
+
+</html>
