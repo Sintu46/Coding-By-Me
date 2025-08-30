@@ -1,0 +1,19 @@
+
+body{
+    background-color:rgb(223, 131, 126);
+    margin: 10px;
+    padding: 10px;
+}
+
+
+ 
+
+
+#div1 {
+        width:200px;
+        height:200px;
+        background-color:lightblue;
+        color:White;
+        font-size:14px;
+        border:2px solid;
+   }

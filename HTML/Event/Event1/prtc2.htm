@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border-radius: 30px;
+            color: red;
+            margin: 10px;
+            border: 2px solid yellow;
+        }
+        div{
+            border: 2px solid grey;
+            height: 120px;
+            width: 180px;
+            text-align: center;
+            color: aqua;
+            background-color : bisque;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline Event Listener -->
+     <button onclick="console.log('Button is Clecked');alert('Pressed')">Click Here</button>
+    <!-- Level 0 Event Listener -->
+      <div id="btn1">This is A Div Box</div>
+      <!-- Modern Event Listener -->
+       <button id="But"> Click</button>
+      </body>
+      <script>
+         const a1=document.getElementById('btn1');
+         btn1.onmouseover = ()=>{
+                    console.log('triggerd on DBL CLICK');
+                    alert('Triggered');
+         }
+         const aa1= document.getElementById('But');
+         aa1.addEventListener("mouseover",function(){
+            console.log("the Mouse  on button.");
+            alert('Mouseovers performed');
+            aa1.addEventListener("mouseout",function(){
+                console.log("Mouse is leave.");
+                alert('Leave...');
+            })
+         });
+    </script>
+</html>
