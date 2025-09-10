@@ -121,3 +121,101 @@ header{
     max-height: 75%;
     font-weight: 700;
 }
+
+.poster_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.poster_img{
+    width: 250px;
+}
+
+.footer_container{
+    padding: 30px 0px 40px 0px;
+    background-color: #FAFBFC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px 0 0;
+}
+.shopping_container{
+         width: 200px;
+         padding-right: 20px; }
+
+
+.footer_heading{
+    color: #282c3f;
+   padding:10px 5px 10px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.footer_element {
+    width: 200px;
+    display: block ;
+    text-transform: capitalize;
+    padding:12px 5px  10px 10px;
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+   
+     
+}
+.useful_link{
+     color: #282c3f;
+   padding:10px 5px 4px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+.desktop-appExperience{
+     
+    width: 320px;
+    height: 220px;
+    font-size: 15px;
+    line-height: 19px;
+     padding-right: 30px;
+  
+}
+
+.down_img{
+    height: 40px;
+   
+  
+}
+.desktop-downLinkContainer{
+    display:block;
+    margin-top: 20px;
+}
+
+.desktop-keepInTouch{
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.more_about_myntra{
+    margin:0 13px 0 0 ;
+}
+.section{
+    display: flex;
+    width: 300px;
+    height: 150px;
+}
+.desk_promise_img{
+    padding: 0 10px 0 0 ;
+   
+    margin-top: 6px;
+}
+.return_img{
+    padding: 0 10px 0 0 ;
+   
+    margin-top: 6px;
+}
+
